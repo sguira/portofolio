@@ -1,0 +1,29 @@
+<div class="competence">
+  <h1>
+    {{titre}}
+  </h1>
+  <div class="main-scroll">
+
+    <div class="icon" (click)="scrollLeft()">
+      <button mat-button>
+        <img src="../../../assets/images/left.png" alt="">
+      </button>
+    </div>
+    <div class="cover">
+
+      <div class="scroll">
+        <div class="first"></div>
+        <div *ngFor="let item of body" class="card">
+          <h4> {{item.name}} </h4>
+          <img src="../../../assets/images/java.png" alt="">
+        </div>
+      </div>
+
+    </div>
+    <div class="icon" (click)="scrollRight()">
+      <button mat-button>
+        <img src="../../../assets/images/right.png" alt="png">
+      </button>
+    </div>
+  </div>
+</div>

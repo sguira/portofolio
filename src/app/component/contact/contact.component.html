@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="container-fluid row">
+    <div class="section col">
+      <h1>
+        Me Contacter
+      </h1>
+      <div class="content">
+        <div>
+          <div>
+            <input type="text" placeholder="objet du message">
+          </div>
+          <div>
+            <textarea name="" id="" cols="30" rows="8" placeholder="corps du message"></textarea>
+          </div>
+          <div><button type="submit">Contacter <i class="ri-mail-send-fill"></i> </button></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="section-2  col">
+    <h2>Me suivre Sur</h2>
+    <div class="row">
+      <div *ngFor="let item of reseaux" class="col" (click)="goto(item.url)">
+        <img [src]="item.image" width="150" alt="">
+        <h4>
+          {{item.name}}
+        </h4>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="welcome">
+
+    <div class="image">
+      <img src="../../../assets/images/image.jpg" height="" width="200" alt="">
+    </div>
+    <div class="summary">
+
+
+      <p>
+
+        <span>Salut! je suis <br> </span>
+        <span class="name">Guira Souleymane</span>
+        bienvenue sur mon portofolio,<br>
+        je suis élève ingénieur en <u>DataScience</u> <br>
+        pour plus d'information veuillez visiter le contenu du portofolio
+      </p>
+
+      <div class="btn1" id="scroller" (click)="scrollTo()">
+        <i class="ri-arrow-drop-down-line"></i>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="competence">
+    <app-horizontal-scroll titre=" Mes Competences" [body]="langage"></app-horizontal-scroll>
+  </div>
+
+
+
+
+
+
+</div>
